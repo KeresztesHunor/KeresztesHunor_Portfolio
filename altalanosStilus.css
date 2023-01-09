@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+#fel {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.5;
+  transition: opacity 0.25s;
+  z-index: 99;
+}
+
+#fel polygon {
+  fill: white;
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+#fel:hover {
+  opacity: 0.75;
+}
+
+#fel:hover polygon {
+  opacity: 0.75;
+}
+
+#fel:active {
+  opacity: 1;
+}
+
+#fel:active polygon {
+  opacity: 1;
+}
+
+body {
+  background-image: url("kepek/hatter.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Roboto-Bold";
+}
+
+main {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px red;
+  display: grid;
+  gap: 5px;
+}
+
+.balra {
+  text-align: left;
+}
+
+.kozep {
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px red inset;
+  grid-area: h;
+}
+
+nav {
+  padding: 10px;
+  background-color: black;
+  box-shadow: 0px 0px 5px 5px red inset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: n;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black,
+    0 0 5px black;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red;
+}
+
+a:active {
+  color: black;
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white,
+    0 0 5px white;
+}
+
+article {
+  padding: 10px;
+  background-color: black;
+  box-shadow: 0px 0px 5px 5px red inset;
+  display: grid;
+  grid-area: ar;
+}
+
+article div {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+article h1 {
+  margin: 0 auto 10px;
+}
+
+h1 {
+  display: inline-block;
+  text-shadow: 2px 2px red;
+  border-bottom: 2px solid white;
+  box-shadow: 0 10px 10px -5px red;
+}
+
+p {
+  margin: 5px 0 15px;
+  text-align: justify;
+}
+
+footer {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px red inset;
+  grid-area: f;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+}

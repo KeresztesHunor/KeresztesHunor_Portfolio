@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Keresztes Hunor portfóliója" />
+    <meta name="keywords" content="portfolio" />
+    <meta name="author" content="Keresztes Hunor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projektekStilus.css" />
+    <title>Keresztes Hunor</title>
+  </head>
+  <body>
+    <a id="fel" href="#">
+      <svg height="100" width="100">
+        <polygon points="50,10 90,50 75,50 75,90 25,90 25,50 10,50" />
+      </svg>
+    </a>
+    <script>
+      window.onscroll = () => {
+        fel.style.display =
+          document.body.scrollTop > 0 || document.documentElement.scrollTop > 0
+            ? "inline-block"
+            : "none";
+      };
+    </script>
+    <main>
+      <header>
+        <h1>Projektek</h1>
+      </header>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="hobbik.html">Hobbik</a>
+        <a href="projektek.html">Projektek</a>
+        <a href="egyeb.html">Egyéb</a>
+      </nav>
+      <article>
+        <div id="webProgramozasProjektek">
+          <h1 class="kozep">Projektjeim</h1>
+          <p class="kozep">
+            Ezek az iskolai órai munkáim linkjei (legalábbis azok amiket
+            Github-ra töltöttem fel) időrendi sorrendben.
+          </p>
+          <ul>
+            <li><a href="https://kereszteshunor.github.io/Grid2/">Grid</a></li>
+            <li>
+              <a
+                href="https://kereszteshunor.github.io/KertesztesHunorWebaruhaz/"
+                >Webáruház</a
+              >
+            </li>
+            <li>
+              <a href="https://kereszteshunor.github.io/KeresztesHunorTablazat/"
+                >Táblázat</a
+              >
+            </li>
+            <li>
+              <a href="https://kereszteshunor.github.io/KeresztesHunor_Sor/"
+                >Sör</a
+              >
+            </li>
+            <li>
+              <a href="https://kereszteshunor.github.io/KeresztesHunorPosition/"
+                >Position</a
+              >
+            </li>
+            <li>
+              <a href="https://kereszteshunor.github.io/GRID_TABLAZAT/"
+                >Téli versek és egyéb gondolatok</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://kereszteshunor.github.io/Reszponziv-oldal-kepekkel/"
+                >Reszponzív oldal képekkel</a
+              >
+            </li>
+            <li>
+              <a href="https://kereszteshunor.github.io/Galeria/">Képgaléria</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer>Keresztes Hunor</footer>
+    </main>
+  </body>
+</html>

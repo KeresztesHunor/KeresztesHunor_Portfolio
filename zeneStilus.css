@@ -1,0 +1,140 @@
+@import "hobbikAltalanosStilus.css";
+
+.sajatSzamok table div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#intro {
+  padding: 4px 4px 0px;
+  border: 1px solid white;
+}
+
+#intro:hover {
+  padding: 4px;
+}
+
+#intro:hover video {
+  display: block;
+  animation: fadeInOut 5s forwards;
+}
+
+#intro:hover img {
+  display: none;
+}
+
+#intro video {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+#intro img {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 1s forwards;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid white;
+}
+
+tr {
+  background-color: hsl(0, 50%, 25%);
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(0, 0%, 50%);
+}
+
+#jatekZene tr td:first-child {
+  width: 33%;
+}
+
+#jatekZene tr td:nth-child(2) {
+  width: 33%;
+}
+
+#jatekZene tr td:last-child {
+  width: 34%;
+}
+
+.sajatSzamok tr td:first-child {
+  width: 67%;
+}
+
+.sajatSzamok tr td:nth-child(2) {
+  width: 0%;
+}
+
+.sajatSzamok tr td:nth-child(3) {
+  width: 33%;
+}
+
+.sajatSzamok tr td:last-child {
+  width: 0%;
+}
+
+th {
+  background-color: black;
+}
+
+#sajatSzamok {
+  text-align: center;
+}
+
+.info {
+  position: relative;
+  color: white;
+  text-shadow: none;
+}
+
+.info span {
+  visibility: hidden;
+  position: absolute;
+  width: 250px;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid white;
+  z-index: 1;
+}
+
+.info:hover span {
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

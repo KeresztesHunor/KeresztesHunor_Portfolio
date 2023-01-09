@@ -1,0 +1,18 @@
+@import "altalanosStilus.css";
+
+main {
+  grid-template-areas:
+    "h"
+    "n"
+    "ar"
+    "f";
+}
+
+#webProgramozasProjektek ul {
+  padding: 0;
+}
+
+#webProgramozasProjektek ul li {
+  list-style: none;
+  text-align: center;
+}

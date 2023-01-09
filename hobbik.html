@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Keresztes Hunor portfóliója" />
+    <meta name="keywords" content="portfolio" />
+    <meta name="author" content="Keresztes Hunor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hobbikStilus.css" />
+    <title>Keresztes Hunor</title>
+  </head>
+  <body>
+    <a id="fel" href="#">
+      <svg height="100" width="100">
+        <polygon points="50,10 90,50 75,50 75,90 25,90 25,50 10,50" />
+      </svg>
+    </a>
+    <script>
+      window.onscroll = () => {
+        fel.style.display =
+          document.body.scrollTop > 0 || document.documentElement.scrollTop > 0
+            ? "inline-block"
+            : "none";
+      };
+    </script>
+    <main>
+      <header>
+        <h1>Hobbik</h1>
+      </header>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="hobbik.html">Hobbik</a>
+        <a href="projektek.html">Projektek</a>
+        <a href="egyeb.html">Egyéb</a>
+      </nav>
+      <article>
+        <a href="zene.html">
+          <img src="kepek/FL-studio logo.png" alt="FL-Studio logo" />
+          <h2>Zene</h2>
+        </a>
+        <a href="motionGrafika.html">
+          <img src="kepek/Blender logo.png" alt="Blender logo" />
+          <h2>Motion grafika</h2>
+        </a>
+        <a href="jatekFejlesztes.html">
+          <img src="kepek/Unity logo.png" alt="Unity logo" />
+          <h2>Játék fejlesztés</h2>
+        </a>
+      </article>
+      <footer>Keresztes Hunor</footer>
+    </main>
+  </body>
+</html>

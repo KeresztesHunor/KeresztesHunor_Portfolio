@@ -1,0 +1,123 @@
+@import "hobbikAltalanosStilus.css";
+
+.sxKep {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+#logo {
+  width: 128px;
+  max-width: 256px;
+  margin: 7px 5px 0 0;
+  float: left;
+}
+
+#kepGaleria h2,
+#videoGaleria h2 {
+  margin: 0;
+  text-align: center;
+}
+
+#kepGaleria,
+#videoGaleria {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#kepGaleria a img,
+#videoGaleria a video {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  position: relative;
+  border: none;
+}
+
+.info p {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  left: 0;
+  text-align: center;
+  background-color: black;
+  border: 1px solid white;
+  z-index: 1;
+}
+
+.info:hover p {
+  visibility: visible;
+}
+
+.teljesKep,
+.teljesVideo {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  text-align: center;
+}
+
+.teljesKep:target,
+.teljesVideo:target {
+  display: block;
+  animation: fadeIn 0.25s forwards;
+}
+
+.teljesKepTartalom,
+.teljesVideoTartalom {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  max-width: 80%;
+  margin: 0;
+  padding: 0 0 5vw 0;
+  border: none;
+  text-align: right;
+}
+
+.teljesKepTartalom a,
+.teljesVideoTartalom a {
+  font-size: 50px;
+}
+
+.teljesKepTartalom img,
+.teljesVideoTartalom video {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #kepGaleria,
+  #videoGaleria {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+@import "altalanosStilus.css";
+
+main {
+  grid-template-areas:
+    "h"
+    "n"
+    "ar"
+    "f";
+}

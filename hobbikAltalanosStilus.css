@@ -1,0 +1,57 @@
+@import "altalanosStilus.css";
+
+main {
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "h h"
+    "n n"
+    "ar as"
+    "f f";
+}
+
+aside {
+  background-color: black;
+  box-shadow: 0 0 5px 5px red inset;
+  grid-area: as;
+}
+
+aside ul {
+  position: sticky;
+  top: 10px;
+  list-style: none;
+  margin: 15px 0 15px 0;
+  padding: 0;
+}
+
+.menuPont {
+  margin: 15px;
+  padding: 5px;
+  box-shadow: 0 0 5px 5px red;
+}
+
+.menuPont:hover {
+  box-shadow: 0 0 5px 5px white;
+}
+
+.menuPont:hover .lenyiloTartalom {
+  display: block;
+}
+
+.lenyiloTartalom {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "ar"
+      "f";
+  }
+
+  aside {
+    display: none;
+  }
+}

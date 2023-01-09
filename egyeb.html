@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Keresztes Hunor portfóliója" />
+    <meta name="keywords" content="portfolio" />
+    <meta name="author" content="Keresztes Hunor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="egyebStilus.css" />
+    <title>Keresztes Hunor</title>
+  </head>
+  <body>
+    <a id="fel" href="#">
+      <svg height="100" width="100">
+        <polygon points="50,10 90,50 75,50 75,90 25,90 25,50 10,50" />
+      </svg>
+    </a>
+    <script>
+      window.onscroll = () => {
+        fel.style.display =
+          document.body.scrollTop > 0 || document.documentElement.scrollTop > 0
+            ? "inline-block"
+            : "none";
+      };
+    </script>
+    <main>
+      <header>
+        <h1>Egyéb</h1>
+      </header>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="hobbik.html">Hobbik</a>
+        <a href="projektek.html">Projektek</a>
+        <a href="egyeb.html">Egyéb</a>
+      </nav>
+      <article>
+        <p class="kozep">
+          Ide végül nem jutott eszembe semmi, hogy mit rakjak, úgyhogy itt egy
+          kép a macskámról és egy
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a>.
+        </p>
+        <div id="sheldon">
+          <img src="kepek/Sheldon.jpg" alt="Sheldon" />
+        </div>
+      </article>
+      <footer>Keresztes Hunor</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Keresztes Hunor portfóliója" />
+    <meta name="keywords" content="portfolio" />
+    <meta name="author" content="Keresztes Hunor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jatekFejlesztesStilus.css" />
+    <title>Keresztes Hunor</title>
+  </head>
+  <body>
+    <a id="fel" href="#">
+      <svg height="100" width="100">
+        <polygon points="50,10 90,50 75,50 75,90 25,90 25,50 10,50" />
+      </svg>
+    </a>
+    <script>
+      window.onscroll = () => {
+        fel.style.display =
+          document.body.scrollTop > 0 || document.documentElement.scrollTop > 0
+            ? "inline-block"
+            : "none";
+      };
+    </script>
+    <main>
+      <header>
+        <h1>Játékfejlesztés</h1>
+      </header>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="hobbik.html">Hobbik</a>
+        <a href="projektek.html">Projektek</a>
+        <a href="egyeb.html">Egyéb</a>
+      </nav>
+      <aside>
+        <ul>
+          <li class="menuPont">
+            <a href="#enEsAJatekfejlesztes">Én és a játékfejlesztés</a>
+            <div class="lenyiloTartalom">
+              <ol>
+                <li><a href="#backStory">Backstory</a></li>
+                <li>
+                  <a href="#showcase">Minecraft stílusú világ generáló</a>
+                </li>
+              </ol>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <article>
+        <div class="balra" id="enEsAJatekfejlesztes">
+          <h1>A játékfejlesztéssel való kapcsolatom</h1>
+          <p id="backStory">
+            A játékfejlesztésbe az előző programozó képzésből kerültem bele.
+            Maga a képzés 2019 szeptemberében kezdődött és 2020 februárjában
+            végződött, de az utolsó hivatalos órarendi óra március végén volt,
+            hogy legyen egy üres hónapunk, hogy a projektünkön dolgozhassunk.
+            Már a képzés elején ki kellett találnunk, hogy milyen projektet
+            akartunk csinálni. Bármit választhattunk, úgyhogy én egy videójáték
+            elkészítése mellett döntöttem, mert ahoz a témához jól értek. Már
+            egész jól haladtam a projektemmel, de március közepén... mindannyian
+            tudjuk mi történt. Így nem tudtam befejezni a képzést, viszont
+            felkelt bennem a játékfejlesztés iránti érdeklődés, úgyhogy tovább
+            tanultam magamtól. Tehát ott álltam minden szükséges tudással ahoz,
+            hogy teljes játékokat tudjak összerakni. Tudok C#-ban programozni,
+            tudok modellezni, textúrázni és animálni a Blender-rel és még zenét
+            is tudok csinálni és sound-design-olni az FL-studio-val.
+          </p>
+          <p>
+            Mikor tanultam használni a Unity-t, rátaláltam egy halom
+            játékfejlesztéssel foglalkozó csatornára is (pl.:
+            <a href="https://www.youtube.com/@Danidev">Dani</a>,
+            <a href="https://www.youtube.com/@Brackeys">Brackeys</a>), amik
+            inspiráltak arra, hogy indítsak egy saját játékfejlesztéses
+            csatornát. Pár hónapig eltartott, de fel is töltöttem az első
+            videómat, de pár hónapra rá tönkrement a gépemben a GPU
+            ventillátora, Tehát nem tudtam használni. Kellett rendelni egy újat,
+            de azt csak Kínából lehetett (mindent megpróbáltam, hogy ne onnan
+            kelljen, de nem volt végül más opció). Így kb 3 hétig tartott mire
+            megjött és eközben nem tudtam használni a gépemet. Időközben az
+            anyám használatlan laptop-ját használtam és azon csináltam valamiket
+            Blender-ben, amiket szórakozásból "tutorial" formában felraktam
+            Youtube-ra. Az egyik videónak hirtelen egész sok nézettsége lett,
+            úgyhogy gondoltam: "Ha ez ilyen jól megy, akkor mért nem inkább ezt
+            csinálom a csatornámon?". Így kerültem oda ahol most vagyok, de a
+            játékfejlesztést sosem adtam fel és még most is dolgozok egy
+            játékon, amiből úgyszintén egy videót akarok csinálni.
+          </p>
+          <p>
+            Alább van egy kis demonstrációja egy Minecraft stílusú világ
+            generálónak (ez egér rávitelével újraindíthatod a videót).
+          </p>
+          <div id="showcase">
+            <video
+              autoplay
+              muted
+              playsinline
+              onmouseover="this.currentTime=0;this.play()"
+              onmouseout="this.pause();this.currentTime=this.duration;"
+            >
+              <source src="videok/Minecraft style world generation.mp4" />
+            </video>
+          </div>
+        </div>
+      </article>
+      <footer>Keresztes Hunor</footer>
+    </main>
+  </body>
+</html>
