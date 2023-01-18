@@ -14,12 +14,14 @@ article {
 }
 
 article a {
+  background-color: hsl(150, 100%, 40%);
   margin: 10px;
-  box-shadow: 0 0 5px 5px red;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 article a:hover {
-  box-shadow: 0 0 5px 5px white;
+  background-color: hsl(150, 100%, 60%);
+  box-shadow: 0 0 5px 5px hsl(300, 100%, 50%);
 }
 
 article a img {

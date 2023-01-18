@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("kepek/hatter.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: hsl(225, 100%, 50%);
+  font-family: "Roboto-Medium";
+}
+
+main {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+  background-color: hsl(300, 100%, 50%);
+  display: grid;
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.5);
+  gap: 5px;
+}
+
 #fel {
   display: none;
   position: fixed;
@@ -36,25 +55,6 @@
   opacity: 1;
 }
 
-body {
-  background-image: url("kepek/hatter.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-  font-family: "Roboto-Bold";
-}
-
-main {
-  width: 80%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 5px;
-  background-color: white;
-  box-shadow: 0px 0px 5px 5px red;
-  display: grid;
-  gap: 5px;
-}
-
 .balra {
   text-align: left;
 }
@@ -64,32 +64,33 @@ main {
 }
 
 header {
-  background-color: black;
+  background-color: hsl(150, 100%, 50%);
   text-align: center;
-  box-shadow: 0px 0px 5px 5px red inset;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
   grid-area: h;
 }
 
 nav {
   padding: 10px;
-  background-color: black;
-  box-shadow: 0px 0px 5px 5px red inset;
+  background-color: hsl(150, 100%, 50%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
   grid-area: n;
 }
 
 a {
+  font-family: "Roboto-Bold";
   text-align: center;
   text-decoration: none;
-  color: red;
-  text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black,
-    0 0 5px black;
+  color: hsl(300, 50%, 50%);
 }
 
 a:hover {
   color: white;
-  text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red;
+  text-shadow: 0 0 1px hsl(300, 100%, 50%), 0 0 2px hsl(300, 100%, 50%),
+    0 0 3px hsl(300, 100%, 50%), 0 0 4px hsl(300, 100%, 50%),
+    0 0 5px hsl(300, 100%, 50%);
 }
 
 a:active {
@@ -100,9 +101,9 @@ a:active {
 
 article {
   padding: 10px;
-  background-color: black;
-  box-shadow: 0px 0px 5px 5px red inset;
+  background-color: hsl(150, 100%, 50%);
   display: grid;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
   grid-area: ar;
 }
 
@@ -110,7 +111,7 @@ article div {
   text-align: center;
   margin: 5px;
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid hsl(225, 100%, 50%);
 }
 
 article h1 {
@@ -119,9 +120,8 @@ article h1 {
 
 h1 {
   display: inline-block;
-  text-shadow: 2px 2px red;
-  border-bottom: 2px solid white;
-  box-shadow: 0 10px 10px -5px red;
+  border-bottom: 2px solid hsl(225, 100%, 50%);
+  box-shadow: 0px 10px 10px -10px black;
 }
 
 p {
@@ -131,15 +131,20 @@ p {
 
 footer {
   padding: 10px;
-  background-color: black;
+  background-color: hsl(150, 100%, 50%);
   text-align: center;
-  box-shadow: 0px 0px 5px 5px red inset;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
   grid-area: f;
 }
 
 @font-face {
   font-family: Roboto-Bold;
   src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(fonts/Roboto-Medium.ttf);
 }
 
 @media screen and (max-width: 1000px) {

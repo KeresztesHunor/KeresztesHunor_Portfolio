@@ -10,8 +10,8 @@ main {
 }
 
 aside {
-  background-color: black;
-  box-shadow: 0 0 5px 5px red inset;
+  background-color: hsl(150, 100%, 50%);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
   grid-area: as;
 }
 
@@ -26,11 +26,11 @@ aside ul {
 .menuPont {
   margin: 15px;
   padding: 5px;
-  box-shadow: 0 0 5px 5px red;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .menuPont:hover {
-  box-shadow: 0 0 5px 5px white;
+  box-shadow: 0 0 5px 5px hsl(300, 100%, 50%);
 }
 
 .menuPont:hover .lenyiloTartalom {
